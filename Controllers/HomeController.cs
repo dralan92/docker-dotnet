@@ -26,7 +26,7 @@ namespace MvcClient.Controllers
             //var response = await _client.SendAsync(requestMessage);
             //var messageString = await response.Content.ReadAsStringAsync();
 
-            ViewBag.Text = "Coming Soon";//messageString;
+            ViewBag.Text = "Coming Soon!!!";//messageString;
             return View();
         }
 
