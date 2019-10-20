@@ -1,0 +1,6 @@
+﻿FROM mcr.microsoft.com/dotnet/core/sdk:3.0-buster
+WORKDIR /app
+COPY *.csproj ./
+RUN dotnet restore
+COPY . ./
+CMD ["dotnet", "run"]
