@@ -6,16 +6,4 @@ services:
 before_install:
     - docker build -t dralan/docker-dotnet .
  
- deploy:
-    provider: elasticbeanstalk
-    region: "us-east-1"
-    app: "docker-dotnet"
-    env: "DockerDotnet-env"
-    bucket-name: "elasticbeanstalk-us-east-1-188897900704"
-    bucket_path: "docker-dotnet"
-    on:
-        branch: master
-    access_key_id:
-        secure: $AWS_ACCESS_KEY
-    secret_access_key:
-        secure: "$AWS_SECRET_KEY"
+ 
